@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Straight Bar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark">Straight Bar</span>
+      <span class="tuning">C6 lap steel · C E G A C E</span>
+    </div>
+    <nav class="modes">
+      <button class="on" data-action="mode" data-mode="lesson" type="button">Lessons</button>
+      <button data-action="mode" data-mode="practice" type="button">Practice</button>
+      <button data-action="mode" data-mode="tuner" type="button">Tuner</button>
+      <button data-action="mode" data-mode="sixths" type="button">Sixths</button>
+      <button data-action="mode" data-mode="songs" type="button">Songs</button>
+      <button data-action="mode" data-mode="library" type="button">Library</button>
+      <button data-action="mode" data-mode="theory" type="button">Theory</button>
+    </nav>
+  </header>
+  <div class="workspace">
+    <aside id="lesson-list"></aside>
+    <main>
+      <div id="highway" hidden></div>
+      <div id="neck-mount"></div>
+      <p id="caption"></p>
+      <div id="transport"></div>
+    </main>
+    <aside id="inspector"></aside>
+  </div>
+  <section id="library" hidden></section>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
